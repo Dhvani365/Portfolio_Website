@@ -1,10 +1,14 @@
     /* Banner Section */
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .banner-text{
     padding: 30px 0px;  
     color: white;  
+}
+.bannerbtn{
+    margin-top: 50px;
 }
 .img-style{
     width: 210px;
@@ -33,15 +37,17 @@ h2{
     margin-top: 20px;
 }
 span{
-    color: rgb(190, 44, 0);
+    color: rgb(255, 221, 29);
 }
 
 /* About section */
 .aboutimg{
-    width: 400px;
+    width: 500px;
+    align-self: center;
     border-radius: 15px;
-    padding-left: 0px;
-    margin-left: 10px;
+    /* padding-left: 20px;
+    margin-left: 20px; */
+    margin-top: 20px;
     height: 88vh;
 }
 #about{
@@ -109,6 +115,9 @@ h4{
 }
 
 /* resume section */
+.resumeh1{
+    margin-left: 500px;
+}
 .cvbtn{
     align-self: center;
     margin-left: 100px;
@@ -206,6 +215,7 @@ h4{
     display: inline-block;
     text-decoration: none;
     transition: transform 1.5s;
+    padding: 3px;
 }
 .icons a:hover{
     color: green;
@@ -236,12 +246,18 @@ h4{
         margin:0px;
         z-index: 2;
     } */
-    .btn{
+    html{
+        overflow-x: hidden;
+    }
+    /* .btn{
         margin: 0;
         display: inline-block;
-    }
+    } */
     .banner-text{
         padding: 10px 0px;    
+    }
+    .bannerbtn{
+        margin: 10px 0px;
     }
     .img-style{
         width: 100%;
@@ -256,7 +272,7 @@ h4{
         flex-basis: 100%;
     }
     .aboutimg{
-        width:100%;
+        display: none;
     }
     .tab-links{
         font-size: 16px;
@@ -270,9 +286,17 @@ h4{
         margin: 0;
     }
    .h4{
-    margin-left: -150px;
-    margin-top: 500px
+    margin-left: -200px;
+    margin-top: 300px
    }
+   .resumeh1{
+        margin-left: 0px;
+    }
+    .projects{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
     .cvbtn{
         margin-left:-150px;
     }
