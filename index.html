@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link effect" aria-current="page" href="#navstyle">Home</a>
+                <a class="nav-link effect" aria-current="page" href="#banner">Home</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link effect" href="#about">About</a>
@@ -39,15 +39,15 @@
     </nav>
 
     <!-- Creating Banner -->
-    <div class="banner text-center">
+    <div class="banner text-center" id="banner">
         <div class="row banner-text">
-          <div class="col" style="padding-top: 60px;">
+          <div class="col" style="padding-top: 100px;">
             <h5>Web Development Intern</h5>
             <h2>Hii! I'm <span>Dhvani</span> Maktuporia</h2>
             <a href="#contact"><button class="btn btn-outline-primary bannerbtn" style="" type="submit"><i class="bi bi-bag-check-fill"></i> Hire Now! </button></a>
             <a href="#portfolio"><button class="btn btn-primary bannerbtn" style="" type="submit"><i class="bi bi-briefcase-fill"></i></i> View My Works </button></a>
         </div>
-          <div class="col">
+          <div class="col" style="padding-top: 50px;">
             <img src="Img1.jpg" class="img-thumbnail img-style" alt="">
           </div>
         </div>
@@ -61,37 +61,13 @@
                         <img src="about1.jpg" class="aboutimg" alt="">
                     </div>
                     <div class="col-2">
-                        <h1 class="title">About Me</h1>
+                        <h1 class="title" style="color: white;">About Me</h1>
                         <h4>Welcome to my portfolio website!</h4>
-                        <p> As a web developer internship, I have a passion for creating high-quality, visually appealing and functional websites that meet the needs of my clients. With my coding skills and a keen eye for detail, I specialize in designing and developing custom websites that not only look great but also function flawlessly across different devices and platforms. Whether you need a simple landing page or a complex web application, I am committed to delivering the best possible solution that exceeds your expectations. feel free to contact me if you have any questions or would like to discuss your project.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('exp')">Experience</p>
-                            <p class="tab-links" onclick="opentab('edu')">Education</p>
-                        </div>
-                        <div class="tab-contents activetab" id="skills">
-                            <ul>
-                                <li><span>HTML & CSS</span><br>Developing web pages</li>
-                                <li><span>Javascript</span><br>Developing dynamic web pages</li>
-                                <li><span>Android</span><br>Developing Android Apps</li>
-                                <li><span>ReactJS & NodeJS</span><br>MERN Development</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="exp">
-                            <ul>
-                                <li><span>2023-Now</span><br>Internship at Code Alpha</li>
-                                <li><span>2022-2023</span><br>Freelancer</li>
-                                <li><span>2021-2020</span><br>Lead a team for Project Development</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="edu">
-                            <ul>
-                                <li><span>2023-Now</span><br>Sarvajanik Institute of technology,Surat<br>BTech in Computer Science</li>
-                                <li><span>CGPA</span><br>10</li>
-                                <li><span>2020-2023</span><br>Government Polytechnic for Girls, Surat<br>Diploma in Computer Engineering</li>
-                                <li><span>CGPA</span><br>10</li>
-                            </ul>
-                        </div>
+                        <p> As a web developer, I have a passion for creating high-quality, visually appealing and functional websites that meet the needs of my clients. With my coding skills and a keen eye for detail, I specialize in designing and developing custom websites that not only look great but also function flawlessly across different devices and platforms. Whether you need a simple landing page or a complex web application, I am committed to delivering the best possible solution that exceeds your expectations. feel free to contact me if you have any questions or would like to discuss your project.</p>
+                        <h4 class="h4">
+                            Download My Resume From Here 
+                        </h4> 
+                        <a href="Dhvani_Resume.pdf" download class="btn btn-outline-primary cvbtn"><i class="bi bi-arrow-down-circle-fill"></i> Download CV </a>
                     </div>
                 </div>
             </div>
@@ -99,14 +75,45 @@
 
       <!-- Resume Section -->
 
-      <div class="containe2" id="resumesec" style="margin-top: 20px;">
+      <div class="containe2" id="resumesec" style="margin-top: 20px; margin-left: 40px; height: 400px;">
         <div class="row">
-            <h1 class="resumeh1" style="">
+            <h1 class="resumeh1">
                 Resume Section
             </h1>
-            <div class="col">
-               
-                <div class="projects" id="resume" style="margin-top: 20px;">                    
+            <div class="col">               
+                <div class="tab-titles">
+                    <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    <p class="tab-links" onclick="opentab('resume')">Projects</p>
+                </div>
+                <div class="tab-contents activetab" id="skills">
+                    <ul>
+                        <h5 style="color: yellow">Skills</h5>
+                        <li><b>HTML & CSS</b>    80%<hr class="hr1"></li>
+                        <li><b>Javascript</b>    60%<hr class="hr2"></li>
+                        <li><b>Android</b>    70%<hr class="hr3"></li>
+                        <li><b>ReactJS & NodeJS</b>    60%<hr class="hr4"></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <h5>Experience</h5>
+                        <li><span>2023-Now</span><br>Internship at Code Alpha</li>
+                        <li><span>2022-2023</span><br>Freelancer</li>
+                        <li><span>2021-2020</span><br>Lead a team for Project Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <h5>Education</h5>
+                        <li><span>2023-Now</span><br>Sarvajanik Institute of technology,Surat<br>BTech in Computer Science</li>
+                        <li><span>CGPA</span><br>10</li>
+                        <li><span>2020-2023</span><br>Government Polytechnic for Girls, Surat<br>Diploma in Computer Engineering</li>
+                        <li><span>CGPA</span><br>10</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="resume">                    
                     <ul>
                         <h5>Projects</h5>
                         <li><span>2022-2023</span><br>QR Code based feedback system</li>
@@ -118,14 +125,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="col" style="margin-top: 150px;">
-                <h4 class="h4">
-                    Download My Resume From Here 
-                </h4>
-                <!-- <form class="d-flex" role="search">
-                    <button class="btn btn-outline-primary cvbtn" type="submit"><i class="bi bi-arrow-down-circle-fill"></i> Dowload CV</button>
-                </form> -->
-                <a href="Dhvani_Resume.pdf" download class="btn btn-outline-primary cvbtn"><i class="bi bi-arrow-down-circle-fill"></i> Download CV </a>
+            <div class="col" style="margin-top: 100px; margin-right: 150px;">
+               <p>I am passionate about creating unique and functional websites that meet the needs of my clients. With experience and practice in coding, designing and building websites, I specialize in creating custom solutions that are tailored to each client’s specific requirements. I believe in using the latest technologies and techniques to build modern and responsive websites that are optimized for speed, security, and search engine ranking. From concept to launch, I work closely with my clients to ensure that their vision is realized and their goals are met. I take pride in delivering high-quality work that exceeds expectations and provides an exceptional user experience.</p>
             </div>
         </div>
       </div>
@@ -168,7 +169,7 @@
         <div class="container" style="margin-top: 50px;">
             <div class="row">
                 <div class="col contact-left">
-                    <h1 class="title" style="margin-left:0px;">Contact Me</h1>
+                    <h1 class="title" style="margin-left:0px; color: white">Contact Me</h1>
                     <p><i class="bi bi-send-check-fill"></i>dhvani365@gmail.com</p>
                     <p><i class="bi bi-phone-vibrate-fill"></i>0123456789</p>
                     <div class="icons">
@@ -176,6 +177,7 @@
                         <a href="mailto:dhvani365@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
                         <a href="facebook.com"><i class="bi bi-facebook"></i></a>
                         <a href="web.whatsapp.com"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://github.com/Dhvani365/Portfolio_Website.git"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
                 <div class="col contact-right">
@@ -188,7 +190,7 @@
                         <div class="form-group">
                           <label for="Input2">Enter Your Email Id</label><br>
                           <input type="email" class="form-control" id="Input2">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          <small id="emailHelp" class="form-text" style="color: rgb(233, 233, 233);">We'll never share your email with anyone else.</small>
                         </div>
                         <br>
                         <div class="form-group">

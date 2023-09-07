@@ -1,7 +1,12 @@
+
     /* Banner Section */
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     overflow-x: hidden;
+}
+body{
+    background-color: black;
+    color: white;
 }
 .banner-text{
     padding: 30px 0px;  
@@ -20,6 +25,7 @@ html{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+    margin-top: 0px;
 }
 .effect:hover{
     background-color: yellow;
@@ -32,6 +38,7 @@ html{
     background-color: blue;
     width: 100%;
     margin-left: 0;
+    position: fixed;
 }
 h2{
     margin-top: 20px;
@@ -42,13 +49,13 @@ span{
 
 /* About section */
 .aboutimg{
-    width: 500px;
+    width: 450px;
     align-self: center;
     border-radius: 15px;
-    /* padding-left: 20px;
-    margin-left: 20px; */
+    /* padding-left: 20px; */
+    margin-left: 30px;
     margin-top: 20px;
-    height: 88vh;
+    height: 80vh;
 }
 #about{
     margin-top: 20px;
@@ -71,8 +78,18 @@ span{
     color: rgb(0, 0, 0);
 }
 h4{
-    color:rgb(190, 44, 0);
+    color:yellow;
 }
+.h4{
+    margin-top: 30px;
+}
+.cvbtn{
+    align-self: center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+/* resume section */
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -106,7 +123,7 @@ h4{
     list-style: none;
 }
 .tab-contents ul li span{
-    color: rgb(190, 44, 0);
+    color: yellow;
     font-weight: bold;
     font-size: 15px;
 }
@@ -114,14 +131,8 @@ h4{
     display: block;
 }
 
-/* resume section */
 .resumeh1{
     margin-left: 500px;
-}
-.cvbtn{
-    align-self: center;
-    margin-left: 100px;
-    margin-top: 20px;
 }
 .projects{
     margin-left: 100px;
@@ -130,13 +141,32 @@ h4{
     list-style: none;
 }
 .projects ul li span{
-    color: rgb(190, 44, 0);
+    color: yellow;
     font-weight: bold;
     font-size: 15px;
 }
+.hr1{
+    width: 400px;
+    border: 5px yellow solid;
+}
+.hr2{
+    width: 200px;
+    border: 5px rgb(255, 117, 117) solid;
+}
+.hr3{
+    width: 300px;
+    border: 5px rgb(30, 255, 0) solid;
+}
+.hr4{
+    width: 200px;
+    border: 5px white solid;
+}
+
+
 /* projects section */
 #h1{
     margin-left:500px;
+    color: white;
 }
 .worklist{
     display: grid;
@@ -206,7 +236,7 @@ h4{
     flex-basis: 60%;
 }
 .contact-left p i{
-    color: green;
+    color: yellow;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -218,7 +248,7 @@ h4{
     padding: 3px;
 }
 .icons a:hover{
-    color: green;
+    color: yellow;
     transform: translateY(-5px);
 }
 .copyright{
@@ -228,6 +258,7 @@ h4{
     background: rgb(213, 231, 213);
     font-weight: 300;
     margin-top: 10px;
+    color: black;
 }
 
 /* css for small screen */

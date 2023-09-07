@@ -1,5 +1,5 @@
 var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
+var tabcontents=document.getElementsByClassName("tab-contents");
 
         function opentab(tabname){
             for(tablink of tablinks){
@@ -11,3 +11,5 @@ var tablinks=document.getElementsByClassName("tab-links");
             event.currentTarget.classList.add("active");
             document.getElementById(tabname).classList.add("activetab");
         }
+
+      
