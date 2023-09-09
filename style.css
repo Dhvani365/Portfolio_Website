@@ -1,5 +1,8 @@
 
     /* Banner Section */
+nav .icon{
+    display: none;
+}
 html{
     scroll-behavior:smooth;
     overflow-x: hidden;
@@ -16,8 +19,10 @@ body{
     margin-top: 50px;
 }
 .img-style{
-    width: 210px;
-    border-radius: 45%;
+    padding-top: 0px;
+    width: 40%;
+    max-width: 100%;
+    border-radius: 50%;
     border: rgb(255, 252, 228) 5px solid;
 }
 .banner{
@@ -38,8 +43,8 @@ body{
     background-color: blue;
     width: 100%;
     margin-left: 0;
-    position: fixed;
 }
+
 h2{
     margin-top: 20px;
 }
@@ -264,105 +269,32 @@ h4{
     color: black;
 }
 
+/* css animation */
 
-/* css for small screen */
+.animated {
+    background-image: url(/css/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
 
-@media only screen and (max-width: 600px){
-    /* #navstyle{
-        display: block;
-        background-color: blue;
-        position: fixed;
-        top:0;
-        right:0;
-        left:0;
-        width:200px;
-        height:100vh;
-        padding-top: 50px;
-        margin:0px;
-        z-index: 2;
-    } */
-   
-    html{
-        overflow-x: hidden;
-    }
-    #navstyle{
-        width: 100%;
-    }
-    #banner{
-        width: 100%;
-    }
-    #about{
-        width: 100%;
-    }
-    .banner-text{
-        padding: 10px 0px;    
-    }
-    .bannerbtn{
-        margin: 10px 0px;
-    }
-    .img-style{
-        width: 100%;
-        border-radius: 45%;
-        border: rgb(255, 252, 228) 5px solid;
-        margin-top: 80px;
-    }
-    .title{
-        font-size: 40px;
-    }
-    .col-1, .col-2{
-        flex-basis: 100%;
-    }
-    .aboutimg{
-        display: none;
-    }
-    .tab-links{
-        font-size: 14px;
-        margin-left:0px;
-        margin-right:10px;
-    }
-    .tab-contents.activetab{
-        margin-left: -20px;
-        margin-right: 0px;
-        font-size: small;
-    }
-   .h4{
-    margin-left: 0px;
-    margin-top: 30px
-   }
-   .resumeh1{
-        margin-left: 0px;
-    }
-    .projects{
-        width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-    }
-    .cvbtn{
-        margin-left:0px;
-    }
-    .col{
-        margin-left: -20px;
-    }
-    #h1{
-        margin-left: 0px;
-    }
-    .hr1{
-        width: 200px;
-        border: 5px yellow solid;
-    }
-    .hr2{
-        width: 100px;
-        border: 5px rgb(255, 117, 117) solid;
-    }
-    .hr3{
-        width: 150px;
-        border: 5px rgb(30, 255, 0) solid;
-    }
-    .hr4{
-        width: 100px;
-        border: 5px white solid;
-    }
-    .p{
-        display: none;
-    }
-}

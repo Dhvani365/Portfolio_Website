@@ -1,0 +1,141 @@
+/* css for small screen */
+
+@media only screen
+and (max-device-width : 720px){
+  
+    html{
+        overflow-x: hidden;
+    }
+    #navstyle{
+        max-width: 100%;
+    }
+    #banner{
+        max-width: 100%;
+    }
+    #about{
+        max-width: 100%;
+    }
+    .banner-text{
+        padding: 10px 0px;    
+    }
+    .bannerbtn{
+        margin: 10px 0px;
+    }
+    .img-style{
+        width: 100%;
+        border-radius: 45%;
+        border: rgb(255, 252, 228) 5px solid;
+        margin-top: 80px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .col-1, .col-2{
+        flex-basis: 100%;
+    }
+    .aboutimg{
+        display: none;
+    }
+    .tab-links{
+        font-size: 14px;
+        margin-left:0px;
+        margin-right:10px;
+    }
+    .tab-contents.activetab{
+        margin-left: -20px;
+        margin-right: 0px;
+        font-size: small;
+    }
+   .h4{
+    margin-left: 0px;
+    margin-top: 30px
+   }
+   .resumeh1{
+        margin-left: 0px;
+    }
+    .projects{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .cvbtn{
+        margin-left:0px;
+    }
+    .col{
+        margin-left: -20px;
+    }
+    #h1{
+        margin-left: 0px;
+    }
+    .hr1{
+        width: 200px;
+        border: 5px yellow solid;
+    }
+    .hr2{
+        width: 100px;
+        border: 5px rgb(255, 117, 117) solid;
+    }
+    .hr3{
+        width: 150px;
+        border: 5px rgb(30, 255, 0) solid;
+    }
+    .hr4{
+        width: 100px;
+        border: 5px white solid;
+    }
+    .p{
+        display: none;
+    }
+    #contact{
+        margin-left: 10px;
+    }
+
+    /* making navbar responsive */
+     nav .icon{
+        display: block;
+        font-size: 25px;
+        color: white;
+     }
+     nav .btn{
+        display: none;
+     }
+     nav ul{
+        display: block;
+        background-color: rgb(4, 11, 105);
+        position: fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+     }
+     .navbar-nav{
+        display: block;
+        background-color: rgb(4, 11, 105);
+        position: fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+     }
+     nav ul li{
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+     }
+     .navbar-nav.navitem{
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+     }
+     nav ul .icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+     }
+
+}
