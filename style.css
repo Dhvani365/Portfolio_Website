@@ -49,13 +49,13 @@ span{
 
 /* About section */
 .aboutimg{
-    width: 450px;
+    width: 100%;
     align-self: center;
     border-radius: 15px;
     /* padding-left: 20px; */
     margin-left: 30px;
     margin-top: 20px;
-    height: 80vh;
+    height: 100%;
 }
 #about{
     margin-top: 20px;
@@ -130,7 +130,10 @@ h4{
 .tab-contents.activetab{
     display: block;
 }
-
+.p{
+    margin-top: 100px;
+    margin-right: 150px;
+}
 .resumeh1{
     margin-left: 500px;
 }
@@ -261,6 +264,7 @@ h4{
     color: black;
 }
 
+
 /* css for small screen */
 
 @media only screen and (max-width: 600px){
@@ -277,13 +281,19 @@ h4{
         margin:0px;
         z-index: 2;
     } */
+   
     html{
         overflow-x: hidden;
     }
-    /* .btn{
-        margin: 0;
-        display: inline-block;
-    } */
+    #navstyle{
+        width: 100%;
+    }
+    #banner{
+        width: 100%;
+    }
+    #about{
+        width: 100%;
+    }
     .banner-text{
         padding: 10px 0px;    
     }
@@ -306,19 +316,18 @@ h4{
         display: none;
     }
     .tab-links{
-        font-size: 16px;
+        font-size: 14px;
         margin-left:0px;
         margin-right:10px;
     }
-    .tab-contents{
-        margin: 0;
-    }
-    .activetab{
-        margin: 0;
+    .tab-contents.activetab{
+        margin-left: -20px;
+        margin-right: 0px;
+        font-size: small;
     }
    .h4{
-    margin-left: -200px;
-    margin-top: 300px
+    margin-left: 0px;
+    margin-top: 30px
    }
    .resumeh1{
         margin-left: 0px;
@@ -329,9 +338,31 @@ h4{
         padding-left: 0;
     }
     .cvbtn{
-        margin-left:-150px;
+        margin-left:0px;
+    }
+    .col{
+        margin-left: -20px;
     }
     #h1{
         margin-left: 0px;
+    }
+    .hr1{
+        width: 200px;
+        border: 5px yellow solid;
+    }
+    .hr2{
+        width: 100px;
+        border: 5px rgb(255, 117, 117) solid;
+    }
+    .hr3{
+        width: 150px;
+        border: 5px rgb(30, 255, 0) solid;
+    }
+    .hr4{
+        width: 100px;
+        border: 5px white solid;
+    }
+    .p{
+        display: none;
     }
 }

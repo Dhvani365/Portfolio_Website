@@ -12,4 +12,13 @@ var tabcontents=document.getElementsByClassName("tab-contents");
             document.getElementById(tabname).classList.add("activetab");
         }
 
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+
       
