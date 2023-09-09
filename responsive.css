@@ -95,6 +95,7 @@ and (max-device-width : 720px){
         display: block;
         font-size: 25px;
         color: white;
+        margin-left: 60%;
      }
      nav .btn{
         display: none;
